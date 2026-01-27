@@ -1,5 +1,5 @@
 ---
-title: "My Story by Johan Vandegriff (told through limericks)"
+title: "My Story by Jane Vandegriff (told through limericks)"
 date: 2017-10-06T15:00:00-04:00
 tags: ["featured", "poetry"]
 ---
@@ -7,7 +7,7 @@ tags: ["featured", "poetry"]
 Here are some limericks that I wrote for an assignment to tell my story.
 
 ```
-Johan is one quarter Lebanese,
+Jane is one quarter Lebanese,
 And three quarters white as swiss cheese.
 He’s spent so long in MoCo,
 That he’s started to go loco,
@@ -31,7 +31,7 @@ But they advanced to Worlds on a longshot.
 ```
 
 ```
-Tinkering is Johan’s main token.
+Tinkering is Jane’s main token.
 From this there’s a proverb he’s spoken:
 For in work or in playing,
 He lives by the saying,
@@ -55,7 +55,7 @@ Installing Arch Linux on his PC.
 ```
 
 ```
-Johan’s become opposed to Google,
+Jane’s become opposed to Google,
 The Internet kit and caboodle.
 He wants to stop being tracked,
 And get privacy back,
@@ -63,7 +63,7 @@ But all of it’s just too dang useful.
 ```
 
 ```
-Now Johan’s a college freshman,
+Now Jane’s a college freshman,
 Studying for a lofty profession.
 He’ll be a double E,
 Hitting the books with glee,

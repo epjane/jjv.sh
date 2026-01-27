@@ -9,7 +9,7 @@ title: "AlArmPiT: Alarm, servo Arm, raspberry Pi, Turns the lights"
 Click [here](https://devpost.com/software/alarmpit) for more info about the project.
 
 ## Code
-See the code and 3D printed part design [here](https://codeberg.org/johanvandegriff/alarmpit)
+See the code and 3D printed part design [here](https://codeberg.org/epjane/alarmpit)
 
 ## Demo
 For a short time, I had a livestream running, and a URL where viewers could go to control my lights and see them change in realtime.

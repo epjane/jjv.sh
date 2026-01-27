@@ -20,7 +20,7 @@ First, I wanted to make a prototype to see how hard it would be to modify Owncas
 Then, I did some research on how I wanted to make the HTML that I would be inserting into Owncast. Previously, I used PHP to do templating on my site, with a common header and footer for each page. You could set custom values when including the header to modify it slightly, such as changing the title, description, and selected page in the navigation bar. In my research, I found that I was looking for a "static site generator" which does this sort of thing, but in a less janky way than PHP. I settled on Hugo, because it seemed the simplest, and it is written in golang, the same language Owncast is written in.
 
 ## hugowncast
-Since Hugo and Owncast are both written in golang, that got me thinking... what if I could include Hugo as a library within Owncast? Then I could write code to make them interact how I want, rather than trying to do it with some bash scripts that might break eventually. I forked the Owncast repo, and [hugowncast](https://github.com/johanvandegriff/hugowncast) was born!
+Since Hugo and Owncast are both written in golang, that got me thinking... what if I could include Hugo as a library within Owncast? Then I could write code to make them interact how I want, rather than trying to do it with some bash scripts that might break eventually. I forked the Owncast repo, and [hugowncast](https://github.com/epjane/hugowncast) was born!
 
 The first problem was that there are two different places to serve webpages from. I had to modify the logic to first check if Owncast provides the file, and if not, then check Hugo. For the index.html, there has to be a special case that serves the first half of the file from Owncast, and the second half from Hugo.
 
@@ -60,7 +60,7 @@ docker run --name myhugowncast -d --restart unless-stopped \
   -v ~/hugo:/app/hugo \
   -e EMAIL="user@example.com" \
   -e DOMAIN="johanv.net" \
-  -it johanvandegriff/hugowncast:latest
+  -it epjane/hugowncast:latest
 ```
 and having a livestream server and personal website ready to go. (disclaimer: don't run the command now, not all of this is implemented yet.) Maybe a better solution would be docker-compose to keep hugowncast and caddy separate, so you can have other sites.
 
@@ -68,4 +68,4 @@ and having a livestream server and personal website ready to go. (disclaimer: do
 One thing I missed about my old site was the file upload and sharing service. I could easily log in from any computer and upload files, then see a listing and download them from any computer. The new site doesn't have this ability since Hugo only does static sites (not dynamic like this would be), so I did some research and found [miniserve](https://github.com/svenstaro/miniserve), which serves a directory as a webpage. I deployed minserve to [files.johanv.net](https://files.johanv.net), with read-only permission, then I deployed it again to [upload.johanv.net](https://upload.johanv.net) with read and write permissions, but password protected.
 
 ## Full Setup Commands
-For the full list of commands I ran to set up `johanv.net`, as well as the source code for my entire site, see [this repo](https://codeberg.org/johanvandegriff/johanv.net/).
+For the full list of commands I ran to set up `johanv.net`, as well as the source code for my entire site, see [this repo](https://codeberg.org/epjane/johanv.net/).

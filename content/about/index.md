@@ -6,7 +6,7 @@ date: 2019-06-10T02:33:57-04:00
 
 Hi, I'm Jane. 
 
-I'm a tinkerer. I love coding, electronics, servers, Linux, Arduino, Raspberry Pi, etc. I take technologies, <img alt="Inspect Element" src="/blog/images/inspect-element.png" style="display: inline; margin: 0" /> s from them, and combine them in fun new ways. In highschool I was a [co-programmer](/blog/log-e-tales-from-the-electron-volts/) on an [FTC team](/gallery/robotics/). I've made some [electronic games](/ArduinOLED/) and many software [repos](https://codeberg.org/johanvandegriff/). The devices I own do not own me. I believe in user privacy, security, and freedom, and in libre software, open hardware, net neutrality, and right to repair.
+I'm a tinkerer. I love coding, electronics, servers, Linux, Arduino, Raspberry Pi, etc. I take technologies, <img alt="Inspect Element" src="/blog/images/inspect-element.png" style="display: inline; margin: 0" /> s from them, and combine them in fun new ways. In highschool I was a [co-programmer](/blog/log-e-tales-from-the-electron-volts/) on an [FTC team](/gallery/robotics/). I've made some [electronic games](/ArduinOLED/) and many software [repos](https://codeberg.org/epjane/). The devices I own do not own me. I believe in user privacy, security, and freedom, and in libre software, open hardware, net neutrality, and right to repair.
 
 I'm a Christian. I love my neighbor as myself, although sometimes it's hard to love either. In college I did a [summer justice program](/blog/bridge-dc/), and a Bible study with fellow programmers and had many good conversations about being good stewards of technology and serving others. I believe that everyone's a sinner, and yet everyone's invited into an epic chorus of love, which is God.
 

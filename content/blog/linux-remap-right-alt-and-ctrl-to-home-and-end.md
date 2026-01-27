@@ -4,7 +4,7 @@ date: 2021-09-26T12:09:11-04:00
 tags: []
 ---
 
-I recently got a [framework laptop](https://frame.work/) and I have been [customizing](https://codeberg.org/johanvandegriff/dotfiles) it, including changing the [touchpad swipe gestures](https://github.com/iberianpig/fusuma) and the keyboard layout. I couldn't find an easy guide on how to re-map the right Alt and Ctrl keys to Home and End, so once I figured it out I decided I'd post it here. I also map Caps Lock to Ctrl, so I have included an optional step here to do that as well.
+I recently got a [framework laptop](https://frame.work/) and I have been [customizing](https://codeberg.org/epjane/dotfiles) it, including changing the [touchpad swipe gestures](https://github.com/iberianpig/fusuma) and the keyboard layout. I couldn't find an easy guide on how to re-map the right Alt and Ctrl keys to Home and End, so once I figured it out I decided I'd post it here. I also map Caps Lock to Ctrl, so I have included an optional step here to do that as well.
 
 ![keyboard with remapped keys labelled](/blog/images/linux-remap-keyboard/framework13-keyboard-remap.png)
 

@@ -12,7 +12,7 @@ Uses a knockoff arduino nano (which actually turned out to be a pro mini with US
     <iframe title="Foam Stacker - handheld arduino game!" width="1120" height="630" src="https://makertube.net/videos/embed/b06bbbde-5826-4853-b6d7-4860670b0c1a" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 </div>
 
-View the arduino code on [Codeberg](https://codeberg.org/johanvandegriff/FoamStacker).
+View the arduino code on [Codeberg](https://codeberg.org/epjane/FoamStacker).
 ![the circuit diagram](circuit.jpg)
 
 <div style="text-align: center">

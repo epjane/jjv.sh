@@ -1,5 +1,5 @@
 #!/bin/bash
-src=~/git/johanvandegriff/jjv.sh/
+src=~/git/epjane/jjv.sh/
 dst=confuzer:/brick/websites/docker/jjv.sh/hugo/
 
 sed -i 's,ignoreFiles = \["gallery/.*"\],#ignoreFiles = ["gallery/.*"],g' "$src/config.toml"
