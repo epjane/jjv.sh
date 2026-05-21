@@ -6,7 +6,7 @@ date: 2021-12-25T06:53:44-04:00
 tags: []
 viewport: '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />'
 ---
-  [updated 2022-05-31T02:07:45-4:00]
+  [updated 2026-05-20T23:54:33-4:00]
   <div id="game">
     <img id="on_img" src="v1/on.jpg" alt="ATinyGame with all LEDs on" style="display:none;" />
     <img id="dim_img" src="v1/dim.jpg" alt="ATinyGame with all LEDs dim" style="display:none;" />
@@ -291,6 +291,7 @@ var seq_index;
 var stacker_row;
 var stacker_direction;
 var stacker_delay;
+var dice_timer = 0;
 
 function game_logic() {
 //   console.log(currentState);
@@ -301,6 +302,7 @@ function game_logic() {
     if (buttonS.justPressed) {
       clearScreen();
       currentState = games[game-1];
+      dice_timer = 0;
     }
   } else if (currentState === 'stackerInit') {
     // ;turn on the bottom 2 rows of LEDs, and the top left LED
@@ -364,8 +366,12 @@ function game_logic() {
     score = 0; //ldi r17, 0 ;score (number of moles hit)
     currentState = 'whackamoleMole'; //ldi r18, 9 ;change state to whackamoleMole
   } else if (currentState === 'diceRoller') {
-    var dice_num = (random() % 6)+1;
-    if (buttonR.justPressed) showScore(dice_num);
+    if (buttonR.pressed) dice_timer = 0; //restart rolling animation
+    if ((dice_timer & (1 << 5)) === 0) { //sbrc r28, 5 (stop rolling after 1/2 sec)
+      dice_timer++;
+      //sbrs r25, 0 (every other frame)
+      if ((r25 & 1) === 1) showScore((random() % 6) + 1);
+    }
     if (buttonL.justPressed) currentState = 'transition';
     nextState = 'gameSelect';
     timer = 0;
